@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>src="scripts.js"</script>
+    <script src="https://kit.fontawesome.com/360d719cf5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+     <nav id="bottomnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#work">My worsk</a>
+        <a href="#contact">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+       </nav>
+    <div id="home" class="home">
+    <a href="#home" class="topbtn">^</a>
+    <div class="intro">
+        <div class="name"></div>
+        <div class="text1";>
+            <p>Desginer, Coding enthusiast.</p>
+    </div>
+    </div>
+    </div>
+    <div class="about" id="about">
+        <div class="abooutitle">My Life Philosphy</div>
+        <div class="content" >I am a slightly introverted person but I do not shy away from social interaction and the opportunity to provide something for the team. I am a firm believer in my own ideals but I'm not stubborn so I don't like being unapproving of other's opinions that might be condescending to my own. I, as like with anyone else, like being happy and do believe that happiness is the way to living life to the fullest, wherever it might have originated from,nothing is a wrong way of living life as long as you are content from the life you have lived and the choices you have made. I hate ever being regretful of any of my actions, so the decisions I make, I thoroughly think about them and try to never even accidentally hurt someone from something I did, because I don't want to regret ever hurting anyone.</div>
+    </div>
+    <div class="work" id="work">
+        <div class="abooutitle">My works:</div>
+        <div class="row">
+            <div class="colum">
+                <div class="imges">
+                    <img src="kiran 3 original_edited.png" alt="Poster" style="width: 100%;">    
+                    <h2>Poster for flex</h2>
+                    <p>The poster that I made for Kiran- The Anti-Ragging Drive</p>    
+                </div>
+            </div>
+            <div class="colum">
+                <div class="imges">
+                    <img src="Dussehra v2.png" alt="Poster" style="width: 100%;">    
+                    <h2>Dussehra Design</h2>
+                    <p>A design that I made for some instagram post</p>    
+                </div>
+            </div>
+            <div class="colum">
+                <div class="imges">
+                    <img src="Untitled-1.png" alt="Poster" style="width: 100%;">    
+                    <h2>Certificates</h2>
+                    <p>Certificates that I made for a chess tournament orgainsed in my school</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+       <div class="abooutitle">Contact me</div>
+       <div class="contact">
+          <div class="link">
+            <a href="" target="_blank">
+                <i class="fa-brands fa-discord"></i></a>
+          </div>
+          <div class="link">
+            <a href="https://www.instagram.com/_abhishekverma____/" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="link">
+            <a href="" target="_blank">
+                <i class="fa-brands fa-twitter"></i></a>
+          </div>
+       </div>
+
+    </div>
+    <script>var prevScrollpos = window.scrollY;
+        window.onscroll = function() 
+        {
+          var currentScrollPos = window.scrollY;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("bottomnav").style.top = "0";
+          } else {
+            document.getElementById("bottomnav").style.top = "-65px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        function myFunction() {
+         var x = document.getElementById("bottomnav");
+        if (x.className === "bottomnav") {
+           x.className += " responsive";
+         } else {
+           x.className = "bottomnav";
+         }
+        }
+        </script>
+</body>
+</html>
