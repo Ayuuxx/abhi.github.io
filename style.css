@@ -1,0 +1,227 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Abril Fatface', sans-serif;
+
+}
+.topbtn{
+  display: none;
+  position: fixed;
+  text-align: center;
+  font-size: 4vw;
+  color: #f2f2f2;
+  width: 4vw;
+  height: 4vw;
+  background-color: #6109cc;
+  opacity: 60%;
+  border-radius: 30%;
+  bottom: 5vw;
+  right: 5.5vw;
+}
+.intro
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
+}
+#bottomnav {
+    overflow: hidden;
+    text-align: center;
+    background-color: #6e2075;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: top 0.2s;
+  }
+  #bottomnav a {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 21px;
+  } 
+  #bottomnav a:hover {
+    background: #52033b;
+    text-decoration: underline;
+    color:  #f2f2f2;
+    transition: .5s;
+  }
+  
+  #bottomnav a.active {
+    background-color: #fc0ab6;;
+    color:#cacacaee
+  }
+  #bottomnav .icon{
+    display: none;
+  }
+  
+.home{
+    background-image: url('wallpapersden.com_synthwave-and-retrowave_3840x2160.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    padding-top: 10vh;
+    background-size: cover;
+
+}
+.name{
+    height: 30vh;
+    width: 30vw;
+    margin: 0 auto;
+    background-image: url('name.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    float: inline-start;
+    background-size: contain;
+    
+}
+.text1{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-weight:bold ;
+    margin-top: 0.55in;
+  }
+.about
+{
+  background-image: linear-gradient(to bottom,#19001a,#34003d);
+  padding:10vh 10vh 20vh 10vh ;
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  font-size: 2vw;
+  text-align: center;
+  color: rgb(220, 141, 209);
+}
+.abooutitle{
+  font-size: 4vw;
+  color: #c5a2fe;
+  text-align: center;
+  transition: .4s;
+}
+.abooutitle:hover{
+  color: white;
+  font-size: 4.3vw;
+}
+.work{
+  background-image: url('train-neon-synthwave-buildings-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.row{
+  
+}
+.row,
+.row > .colum{
+  padding: 0 7%;
+}
+.colum{
+  float: left;
+  width: 35%;
+  color: rgb(220, 141, 209);
+  margin-top: 2%;
+}
+.colum:hover{
+  color: #371231;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.imges{
+  padding: 10px;
+  background-color: rgba(197, 162, 254,.4);
+}
+.imges:hover{
+  background-color: rgba(197, 162, 254,.8)
+}
+#contact{
+  padding-top: 3vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to bottom left, black, rgb(58, 3, 104));
+}
+.contact{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20vh 20vh 35vh;
+  flex-wrap: wrap;
+  margin: 0 auto;
+ }
+ .link{
+     padding: 10px;
+     transition: .6s;
+ }
+ .link:hover{
+     opacity: 60%;
+     cursor: pointer;
+ }
+ .link i{
+  font-size: 5rem;
+  margin: 30px;
+  }
+@media only screen and (max-width: 768px){
+  .about{
+    padding: 5vh 5vh 10vh 5vh;
+  }
+  .content{
+    font-size: 2.2vh;
+  }
+  .abooutitle{
+    font-size: 4vh;
+  }
+  .abooutitle:hover{
+    font-size: 4.3vh;
+  }
+  .name{
+    width: 70vw;
+    height: 40vh;
+  }
+  .text1{
+    margin: top -1in ;
+  }
+  .colum{
+    width: 100%;
+  }
+  .row,
+  .row > .colum{
+    padding: 0; 
+  }
+  #bottomnav a:not(:first-child) {display: none;}
+  #bottomnav a.icon {
+    float: right;
+    display: block;
+  }
+  #bottomnav.responsive {position: relative;}
+  #bottomnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 51px;
+    height: 51px;
+  }
+  #bottomnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topbtn{
+    display: block;
+    width: 8vw;
+    height: 8vw;
+    font-size: 8vw;
+  }
+}
