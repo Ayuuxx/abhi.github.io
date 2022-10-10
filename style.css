@@ -36,7 +36,7 @@ body{
     position: fixed;
     top: 0px;
     width: 100%;
-    transition: top 0.2s;
+    transition: top 0.4s ease;
   }
   #bottomnav a {
     display: inline-block;
@@ -200,7 +200,7 @@ body{
   .row > .colum{
     padding: 0; 
   }
-  #bottomnav a:not(:first-child) {display: none;}
+  #bottomnav a{display: none;}
   #bottomnav a.icon {
     float: right;
     display: block;
@@ -210,8 +210,6 @@ body{
     position: absolute;
     right: 0;
     top: 0;
-    width: 51px;
-    height: 51px;
   }
   #bottomnav.responsive a {
     float: none;
